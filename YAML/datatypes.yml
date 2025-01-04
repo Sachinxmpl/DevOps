@@ -1,0 +1,58 @@
+#String variables 
+
+name: Sachin
+class: "20123"
+job: 'developer'
+
+bio:|
+I am a developer and
+
+#write single lines in multiple lines
+message:> 
+this will 
+all be
+in one single line
+
+number: 5373
+marks: 9213.23
+isVerified: FALSE # n no N false False
+#same for true yes , y , Y
+
+#Specify the type 
+number: !!int 45
+number2: !!float 45.56789987654321
+negativeNum: !!int -45
+binaryNum: !!int 0b111 #starts with 0b
+octalNumber: !!int 06574 #start with 0
+hexaNumber: !!int 0x45 #starts with 0x
+
+commaValue: !!int -540_000
+
+inifinte: !!float .inf
+not a num : .nan
+
+#null
+~: this is a null key
+surname: !!null Null
+
+#arrays
+cities: [Delhi,mumbai]
+
+animals:
+  - turtle
+  - dog
+  - fish
+  - cat
+
+
+{
+  mango : "Yellow" , 
+  age : 56,
+  color: "Orange"
+}
+
+#dates and time 
+date: !!timestamp 2024-12-01
+time: !!timestamp 2024-12-01T09:00:00.000Z
+
+exponentail numbers: 6.023E56
