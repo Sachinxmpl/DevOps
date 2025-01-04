@@ -1,0 +1,79 @@
+student: !!seq
+  - marks: !!int 12
+  - age : !!int 10
+  - hobbies: !!seq  [ "singing", "dancing"]
+  - citites: !!set { "Delhi", "Mumbai" }
+
+
+#nested 
+- 
+ - sachin
+ - khatri
+ - cs
+- 
+ - 
+ - after null
+
+ # key: value pairs are called maps
+!!map
+
+name: Kunal Kushwaha
+role:
+  age: 78
+  job: student
+--- 
+# same as
+name: Kunal Kushwaha
+role: { age: 78, job: student}
+
+# pairs: keys may have duplicate values
+# !!pairs
+
+pair example: !!pairs
+ - job: student
+ - job: teacher
+
+ # !!set will allow you to have unique values
+names: !!set
+ ? Kunal
+ ? Apoorv
+ ? Rahul
+
+
+ # dictionary !!omap
+people: !!omap
+  - Kunal:
+     name: Kunal Kushwaha
+     age: 78
+     height: 678
+  - Rahul:
+     name: Rahul OP
+     age: 50
+     height: 456
+
+
+
+# reusing some properties using anchors
+likings: &likes
+  fav fruit: mango
+  dislikes: grapes
+
+person1:
+  name: Kunal Kushwaha
+  <<: *likes
+
+person2:
+  name: Rahul
+  <<: *likes
+  dislikes: berries
+
+# this will look like
+person2:
+  name: Rahul
+  fav fruit: mango
+  dislikes: berries
+
+person3:
+  name: Apoorv
+  fav fruit: mango
+  dislikes: grapes
