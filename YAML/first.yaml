@@ -1,0 +1,32 @@
+"banana" : "it is more important than apple"
+1 : "This is an integer"
+
+---
+#lists
+- Apple
+- apple
+- banana
+
+---
+cities : 
+  - new delhi
+  - new york
+  - new orleans
+
+---
+destinations : 
+  - new delhi
+   - new york
+  - new orleans
+
+---
+rivers : [amazon river,nile river]
+
+---
+{
+  mango : "Yellow" , 
+  age : 56
+}
+
+...
+
