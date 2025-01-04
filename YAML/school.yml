@@ -1,0 +1,13 @@
+---
+School: !!seq
+ - name : Pulchowk
+   principal: SOmeone
+   students : 
+    - rno : 1
+      marks: 70
+      name : Sachin
+    - rno : 2
+      marks: 80
+      name:  Amit
+
+...
