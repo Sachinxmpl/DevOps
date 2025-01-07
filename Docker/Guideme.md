@@ -174,3 +174,6 @@ docker ps -a
 docker commit -m "added cat.txt" c36a0d9c9100 modified_ubuntu:1.01
 docker images
 docker run -it modified_ubuntu
+
+### creating own image via Dockerfile
+![myimage](myownimage.png)
