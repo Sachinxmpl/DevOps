@@ -12,7 +12,7 @@ A Dockerfile is a text document that contains all the commands a user could call
 - FROM node:16-alpine // base image 
 - WORKDIR /app      // sets work dir of images as app 
 
-- COPY          // copies files from our folder to image folder app 
+- COPY . .        // copies files from our folder to image folder app 
 
 - RUN npm install
 - RUN npm run build        // these two build in app in image dir 
@@ -34,7 +34,7 @@ CMD ["node" , "dist/index.js"]        // command to execute when starting contai
 
 - docker run -p 3000:3000 -e DATABASE_URL="postgres://avnadmin:AVNS_EeDiMIdW-dNT4Ox9l1n@pg-35339ab4-harkirat-d1b9.a.aivencloud.com:25579/defaultdb?sslmode=require" image_name
 
-### Building images 
+### Building images with given tag name 
 - docker build -t image_name 
 
 Now we can see image in docker images

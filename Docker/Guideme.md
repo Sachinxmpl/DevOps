@@ -47,7 +47,7 @@ Using Docker can help you ship your code faster, gives you control over your app
 
 ## Docker Architecture
 
-![Alt text](archi.png)
+![Alt text](./utils/archi.png)
 
 ## Docker runtime
 
@@ -77,7 +77,7 @@ This is where Docker images are stored. Docker Hub is a public registry that any
 
 Describes steps to create a Docker image. It’s like a recipe with all ingredients and steps necessary in making your dish. This file can be used to create Docker Image. These images can be pulled to create containers in any environment. These images can also be store online at docker hubs. When you run docker image you get docker containers. The container will have the application with all its dependencies.
 
-![docker_components](image.png)
+![docker_components](./utils/image.png)
 
 # Docker cli commands
 
@@ -176,5 +176,5 @@ docker images
 docker run -it modified_ubuntu
 
 ### creating own image via Dockerfile
-![myimage](myownimage.png)
-![pushimage](pushtodockerhub.png)
+![myimage](./utils/myownimage.png)
+![pushimage](./utils/pushtodockerhub.png)
